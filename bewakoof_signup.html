@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigup_Bewakoof</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+    <div id="sigup-maincontainer">
+     
+        <div id="image-container">
+            <img src="https://images.bewakoof.com/web/desktop-sign-up-banner--1623760676.png" alt="sigup-image">
+        </div>
+        <div id="sigupform">
+            <h2>Sign Up</h2>
+                <h3>Hi new buddy, let's get you started  with the bewakoofi!</h3>
+
+                <input class="fullname_input"  type="text" placeholder="Full Name" required>
+                <label class="fullname"></label><br>
+                <div id="msg"></div>
+
+                <input type="number" id="phone-number" class="Mobile_input" placeholder="Mobile" required>
+                <label class="Mobile"></label><br>
+                
+
+                <input type="email" class="email_input" placeholder="Email Id" required>
+                <label class="email"></label><br>
+                <div id="msg-email"></div>
+
+                <input type="password" class="password_input" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"   required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" minlength="8">
+                <label class="password"></label><br>
+                <div id="msg-psw"></div>
+
+                <div><input id="checkbox-signup" type="checkbox">I want to receive order updates on
+                    Whatsapp</div>
+                <button id="signup-btn"> PROCEED</button>
+        </div>
+    </div> 
+</body>
+<script src="./bewakoof_signup.js"></script>
+</html>
