@@ -1,0 +1,141 @@
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border-bottom: 2px solid grey;
+}
+
+#mainprofile {
+    /* border: 1px solid red; */
+    margin-left: 25px;
+    padding: 52px;
+}
+
+h1 {
+    text-align: left;
+    padding-left: 115px;
+    margin-bottom: 30px;
+    margin-left: -6%;
+}
+
+button {
+    background-color: #15e2e9;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px -71px;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 36px;
+    margin-bottom: 10px;
+}
+
+#checkbox-signup {
+    margin-top: 30px;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#passwordPopup {
+    display: none;
+    margin-top: 15px;
+}
+
+#passwordForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#passwordForm input[type="password"] {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+}
+
+#passwordForm button {
+    width: 20%;
+    margin-top: 15px;
+}
+
+#doublehr {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 7px;
+    background: yellow;
+    margin-bottom: 50px;
+    margin-right: 85%;
+}
+
+#anchortag {
+    text-decoration: none;
+    margin-top: 40px;
+    padding-left: 83px;
+    color: skyblue;
+    font-size: 23px;
+}
+
+input[type="date"] {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border-bottom: 2px solid grey;
+}
+
+label[for="gender"] {
+    display: inline-block;
+    width: 10%;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+
+#gender {
+    display: inline-block;
+    width: 25%;
+    margin-right: 5%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border-bottom: 2px solid grey;
+    margin-left: 74px;
+}

@@ -1,0 +1,77 @@
+#mainprofile {
+    /* border: 1px solid red; */
+    margin-left: 25px;
+    padding: 52px;
+}
+
+h1 {
+    text-align: left;
+    padding-left: 115px;
+    margin-bottom: 30px;
+    margin-left: -6%;
+}
+
+#doublehr {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 7px;
+    background: yellow;
+    margin-bottom: 50px;
+    margin-right: 85%;
+}
+
+#anchortag {
+    text-decoration: none;
+    margin-top: 40px;
+    padding-left: 83px;
+    color: skyblue;
+    font-size: 23px;
+}
+
+h3 {
+    padding-left: 35%;
+    margin-top: 7%;
+    color: rgba(24, 24, 24, .6);
+    font-size: 25px;
+}
+
+
+button {
+    /* background-color: pink; */
+    background-color: white;
+    border: none;
+    color: teal;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 1px solid skyblue;
+    /* border-radius: 25px; */
+    cursor: pointer;
+    text-transform: uppercase;
+
+    width: 25%;
+    margin-left: 42%;
+    height: 60px;
+
+}
+
+#imageorder {
+
+    padding-left: 42%;
+    height: 588px;
+    width: 300px;
+    color: #181818;
+    text-align: center;
+    margin-bottom: 6px;
+    /* padding-left: 44%;
+    height: 500px; */
+}
+
+img {
+    width: 319px;
+    height: 481px;
+}
