@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <script src="cart.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6c1f5c4092.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- =================Address form========================== -->
+    <div class="address">
+      <h3>Add New Address</h3>
+      <form action="" id="form">
+        <div class="outer">
+          <img
+            src="https://media.istockphoto.com/id/1165087486/vector/india-flag.jpg?s=612x612&w=0&k=20&c=HT-bdr0kaqa1VG8KK7dB4phWvzHF63mndpjQJ91GWCo="
+            alt=""
+            class="image-fluid img"
+          />
+          <input
+            type="text"
+            name=""
+            id="country"
+            value="India"
+            class="inp"
+            required
+          />
+        </div>
+        <div class="outer">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="inp"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+        <div class="outer">
+          <span class="number">
+            <span>
+              <img
+                src="https://media.istockphoto.com/id/1165087486/vector/india-flag.jpg?s=612x612&w=0&k=20&c=HT-bdr0kaqa1VG8KK7dB4phWvzHF63mndpjQJ91GWCo="
+                alt=""
+                class="image-fluid img"
+              />
+            </span>
+
+            <span class="number">+91</span>
+          </span>
+          <input type="tel" pattern="[789][0-9]{9}" class="inp" required />
+        </div>
+        <div class="outer">
+          <input
+            type="tel"
+            name=""
+            id=""
+            class="inp"
+            placeholder="Pincode/Postal Code/Zipcode"
+            required
+          />
+        </div>
+        <div id="c-s" class="d-flex justify-content-between inp">
+          <div class="outer">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="inp"
+              placeholder="City"
+              required
+            />
+          </div>
+          <div class="outer">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="inp"
+              placeholder="State"
+              required
+            />
+          </div>
+        </div>
+        <div class="outer">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="inp"
+            placeholder="Flat no/Building, Street name"
+            required
+          />
+        </div>
+        <div class="outer">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="inp"
+            placeholder="Area/Locality"
+            required
+          />
+        </div>
+        <div class="outer">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="inp"
+            placeholder="Landmark(Optional)"
+          />
+        </div>
+        <div class="address2">
+          <div>
+            <p class="address-as">Save Address As</p>
+            <span class="choose">HOME</span>
+            <span class="choose">OFFICE</span>
+            <span class="choose">OTHER</span>
+          </div>
+          <div class="buttons d-flex justify-content-between">
+            <input type="submit" class="save-address" value="ADD ADDRESS" />
+            <button class="cancel" onclick="cancelAddress()">CANCEL</button>
+          </div>
+        </div>
+      </form>
+      <button class="x" onclick="cancelAddress()">X</button>
+    </div>
+    <!-- =============coupan section============== -->
+    <div
+      class="coupan d-flex flex-column justify-content-around align-items-center position-fixed border top-50 start-50 translate-middle"
+      style="background-color: white"
+    >
+      <button class="x" onclick="none()">X</button>
+      <div class="">
+        <p class="col-12 text-center fs-5 pt-2 mb-2 fw-bold">
+          Apply Coupan / Gift Card
+        </p>
+        <p
+          style="width: 25%; height: 2px; background-color: #fdd835"
+          class="m-auto mt-0"
+        ></p>
+      </div>
+
+      <div class="align-self-start ms-3 ps-1" style="width: 90%">
+        <p class="w-100">
+          <input
+            type="text"
+            id="coupan-code"
+            placeholder="ENTER CODE"
+            required
+            style="
+              width: 100%;
+              border: none;
+              border-bottom: 2px solid #42a2a2;
+              height: 30px;
+            "
+            class="fw-bold"
+          />
+        </p>
+      </div>
+
+      <div style="width: 90%">
+        <button
+          style="
+            background-color: #42a2a2;
+            border: none;
+            width: 100%;
+            height: 35px;
+            color: white;
+            font-size: 16px;
+          "
+          onclick="applyCoupan()"
+        >
+          APPLY
+        </button>
+      </div>
+    </div>
+    <div class="container-lg px-md-5 p-md-0">
+      <div class="row">
+        <!-- ==first column for  products==== -->
+        <div class="row col-md-7" id="showProducts"></div>
+
+        <!-- ==second column for  prices==== -->
+        <div
+          class="row col-md-5 ps-md-3 ps-sm-2 pe-0"
+          id="showDetails"
+          style="max-height: 600px; height: 450px"
+        ></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

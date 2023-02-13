@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bewakoof.com</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .colorAdd {
+        color: #42a2a2;
+      }
+    </style>
+    <script src="shop.js" type="module" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6c1f5c4092.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-xl">
+      <div class="row">
+        <div id="filter-card" class="col-md-3 d-none d-md-block">
+          <div id="collapse-start" class="px-5">
+            <div class="d-flex justify-content-between px-4 pt-3 mt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#offers"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="offers"
+                  >Gender</a
+                >
+              </p>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="offers">
+              <div class="card card-body py-0 border-0 px-4"></div>
+              <p class="gender ps-4">Men</p>
+              <p class="gender ps-4">Unisex</p>
+            </div>
+
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#description"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="description"
+                  >Sizes</a
+                >
+              </p>
+              <p class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </p>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="description">
+              <div class="card card-body py-0 border-0 px-4">
+                <p class="sizes">XS</p>
+                <p class="sizes">S</p>
+                <p class="sizes">M</p>
+                <p class="sizes">L</p>
+                <p class="sizes">XL</p>
+                <p class="sizes">2XL</p>
+                <p class="sizes">3XL</p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#exchange"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="exchange"
+                  >Brand</a
+                >
+              </p>
+              <p class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </p>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="exchange">
+              <div class="card card-body py-0 border-0 px-4">
+                <p class="brand">Bewakoof</p>
+                <p class="brand">Dillinger</p>
+                <p class="brand">Adro</p>
+                <p class="brand">Difference of Opinion</p>
+                <p class="brand">Fully Filmy</p>
+                <p class="brand">Rigo</p>
+                <p class="brand">Mad Over Print</p>
+                <p class="brand">Bushirt</p>
+                <p class="brand">Teeshut</p>
+                <p class="brand">Breakbounce</p>
+                <p class="brand">The Dry State</p>
+                <p class="brand">Craxystore</p>
+                <p class="brand">Fans Army</p>
+                <p class="brand">Snitch</p>
+                <p class="brand">Redwolf</p>
+                <p class="brand">Weezy</p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#delivery"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="delivery"
+                  >Color</a
+                >
+              </p>
+              <p class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </p>
+            </div>
+
+            <div
+              class="border-0 collapse mt-0"
+              id="delivery"
+              style="border-color: red"
+            >
+              <div class="card card-body py-0 border-0 px-4">
+                <div class="row">
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: red;
+                      color: red;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    red
+                  </p>
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: blue;
+                      color: blue;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    blue
+                  </p>
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: yellow;
+                      color: yellow;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    yellow
+                  </p>
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: green;
+                      color: green;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    green
+                  </p>
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: orange;
+                      color: orange;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    or
+                  </p>
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: cyan;
+                      color: cyan;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    cyan
+                  </p>
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: magenta;
+                      color: magenta;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    .
+                  </p>
+
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: grey;
+                      color: grey;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    .
+                  </p>
+
+                  <p
+                    class="col-3 mx-2 color"
+                    style="
+                      background-color: black;
+                      color: black;
+                      height: 40px;
+                      overflow: hidden;
+                    "
+                  >
+                    black
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- =================design================== -->
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#design"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="design"
+                  >Design</a
+                >
+              </p>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="design">
+              <div class="card card-body py-0 border-0 px-4"></div>
+              <p class="design ps-4">Graphic Print</p>
+              <p class="design ps-4">Printed</p>
+              <p class="design ps-4">Typography</p>
+              <p class="design ps-4">Color Block</p>
+              <p class="design ps-4">Tie Dye</p>
+              <p class="design ps-4">Self Design</p>
+              <p class="design ps-4">Ombre</p>
+              <p class="design ps-4">Abstract</p>
+              <p class="design ps-4">Animal Print</p>
+            </div>
+
+            <!-- ===============fit==========================   -->
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#fit"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="fit"
+                  >Fit</a
+                >
+              </p>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="fit">
+              <div class="card card-body py-0 border-0 px-4"></div>
+              <p class="fit ps-4">Oversized</p>
+              <p class="fit ps-4">Regular</p>
+              <p class="fit ps-4">Slim Fit</p>
+              <p class="fit ps-4">Unisex</p>
+              <p class="fit ps-4">Super Loose</p>
+            </div>
+
+            <!-- ======================sleeve========================== -->
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#sleeve"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="sleeve"
+                  >Sleeve</a
+                >
+              </p>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="sleeve">
+              <div class="card card-body py-0 border-0 px-4"></div>
+              <p class="sleeve ps-4">Half Sleeve</p>
+              <p class="sleeve ps-4">Full Sleeve</p>
+              <p class="sleeve ps-4">Sleeveless</p>
+            </div>
+
+            <!-- =====================neck========================== -->
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#neck"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="neck"
+                  >Neck</a
+                >
+              </p>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="neck">
+              <div class="card card-body py-0 border-0 px-4"></div>
+              <p class="neck ps-4">Rounded</p>
+              <p class="neck ps-4">Polo</p>
+              <p class="neck ps-4">Hooded</p>
+              <p class="neck ps-4">Henly Neck</p>
+              <p class="neck ps-4">Turtle Neck</p>
+              <p class="neck ps-4">High Neck</p>
+              <p class="neck ps-4">Mock</p>
+              <p class="neck ps-4">V-Neck</p>
+            </div>
+
+            <!-- ======================type======================== -->
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#type"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="type"
+                  >Type</a
+                >
+              </p>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="type">
+              <div class="card card-body py-0 border-0 px-4"></div>
+              <p class="type ps-4">T-Shirt</p>
+              <p class="type ps-4">Hoodies</p>
+              <p class="type ps-4">Polo</p>
+              <p class="type ps-4">Short T-Shirt</p>
+              <p class="type ps-4">Varsity</p>
+            </div>
+
+            <!-- =============================Ratings=================== -->
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#rating"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="rating"
+                  >Rating</a
+                >
+              </p>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="rating">
+              <div class="card card-body py-0 border-0 px-4"></div>
+              <p class="rating ps-4">4.5 and above</p>
+              <p class="rating ps-4">4 and above</p>
+              <p class="rating ps-4">3.5 and above</p>
+              <p class="rating ps-4">3 and above</p>
+              <p class="rating ps-4">2.5 and above</p>
+              <p class="rating ps-4">2 and above</p>
+              <p class="rating ps-4">1 and above</p>
+            </div>
+
+            <!-- =====================sort==================== -->
+            <div class="d-flex justify-content-between px-4 pt-3">
+              <p>
+                <a
+                  class="text-decoration-none text-dark"
+                  style="font-size: 14px; font-weight: 500"
+                  data-bs-toggle="collapse"
+                  href="#sort"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="sort"
+                  >Sort By</a
+                >
+              </p>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </div>
+
+            <div class="border-0 collapse mt-0" id="sort">
+              <div class="card card-body py-0 border-0 px-4"></div>
+              <p class="sort ps-4">Popular</p>
+              <p class="sort ps-4">New</p>
+              <p class="sort ps-4">Low To High</p>
+              <p class="sort ps-4">High To Low</p>
+            </div>
+          </div>
+        </div>
+        <div id="card" class="row col-md-9 position-relative m-0 p-0"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
