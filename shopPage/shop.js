@@ -18,7 +18,7 @@ async function getData() {
       element.tagColor = "#615E5A";
     }
   });
-  console.log(data);
+
   displayData(data);
   AllPRoducts = data;
   return data;
@@ -138,7 +138,7 @@ for (let i = 0; i < colors.length; i++) {
       return element.color == needCol;
     });
     preProducts = np;
-    console.log(products, np);
+    // console.log(products, np);
     displayData(np);
   });
 }
@@ -161,7 +161,7 @@ for (let i = 0; i < sleeves.length; i++) {
       }
     });
 
-    console.log(products, np);
+    // console.log(products, np);
     displayData(np);
   });
 }
@@ -172,7 +172,7 @@ for (let i = 0; i < sorts.length; i++) {
   sorts[i].addEventListener("click", function () {
     sorts[i].classList.toggle("colorAdd");
     let needSort = sorts[i].textContent;
-    console.log(needSort);
+    // console.log(needSort);
     if (needSort == "Low To High") {
       sortLTH(currArr);
     }
@@ -192,7 +192,7 @@ function sortLTH(array) {
   array.sort(function (a, b) {
     return a.price.substring(1) - b.price.substring(1);
   });
-  console.log(array);
+  // console.log(array);
   displayData(array);
 }
 
