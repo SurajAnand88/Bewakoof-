@@ -1,0 +1,155 @@
+/* !card slider style */
+/* !card slider */
+
+
+main{
+    position: relative;
+    background-image: url("https://images.bewakoof.com/web/bg-web-mc-land-page.svg");
+}
+
+.left-arrow{
+    position: absolute;
+    top:50%;
+    background: white;
+    opacity: 0.4;
+    padding:8px 0 5px 8px;
+    z-index: 50;
+    border: none;
+    border-radius:50%;
+    width:2.2em;
+    height: 2.2em;
+    margin: auto;
+    left: 0.3%;
+    cursor: pointer;
+}
+
+.big-deal{
+    position: absolute;
+    left: 45%;
+    top:7%;
+}
+
+.right-arrow{
+    border: none;
+    z-index: 50;
+    position: absolute;
+    top:50%;
+    right: 0;
+    padding: 5px;
+    background: white;
+    opacity: 0.5;
+    padding:8px 0 5px 8px;
+    border-radius:50%;
+    width:2.2em;
+    height: 2.2em;margin: auto;
+    cursor: pointer;
+    
+}
+header  span{
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+    width: 100%;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+}
+header p span:hover{
+    background: #222;
+    color: white;
+}
+
+.font-size{
+color: black;
+font-size: 10px;
+word-spacing: 1.5px;
+font-family: montserrat-semibold,sans-serif;
+}
+section{
+    width: 98%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+section::-webkit-scrollbar{
+    display: none;
+}
+section .product{
+    min-width: 18%;
+    background: white;
+    margin:  0 40px  0 0;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    border: 0.2px solid rgb(214,214,214);
+
+}
+.heading-div{
+    margin-bottom:2px;
+}
+.product img{
+    width: 100%;
+}
+.detail,
+.button{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #444;
+}
+.heading-div p:first-child{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: montserrat-semibold,sans-serif;
+}
+#spacing{
+display: flex;
+margin-bottom: 15px;
+width: 60%;
+}
+#spacing h6:first-child{
+font-size:16px;
+align-items: center;
+font-family: montserrat-semibold,sans-serif;
+}
+#spacing h6:first-child ~ h6{
+font-family:  montserrat-semibold,sans-serif;
+}
+#spacing h6:first-child + h6{
+text-decoration: line-through;
+}
+#spacing h6:first-child + h6 + h6{
+color:rgb(27,191,100);
+}
+@media (max-width: 768px) {
+    .text h1{
+        font-size: 35px;
+    }
+    .text p{
+        width: 90%;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    header p span{
+        font-size: 30px;
+    }
+    section .product {
+        min-width: 49%;
+        margin:  0 10px  0 0;
+    }
+    .detail, .button{
+        font-size: 16px;
+    }
+    a{
+        padding: 6px 10px;
+    }
+}
