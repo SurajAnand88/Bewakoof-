@@ -40,5 +40,14 @@ function calling (x){
     console.log(e);
   })
 }
-// let temp = JSON.parse(localStorage.getItem("dataparse"))
-// console.log(temp);
+
+let signUpArray = JSON.parse(localStorage.getItem("BewakoofData")) ;
+console.log(signUpArray[0].fullName);
+
+let logname = document.getElementById("login-name1");
+logname.textContent = "Hi," + signUpArray[0].fullName;
+logname.style.fontSize = "15px"
+
+document.querySelector("#cart-icon").addEventListener("click", ()=>{
+  window.open("/cartPage/cart.html")
+})

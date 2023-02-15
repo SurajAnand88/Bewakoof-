@@ -1,3 +1,6 @@
+// let signUpArray = JSON.parse(localStorage.getItem("BewakoofData")) || [];
+
+
 
  function navbar2 (){
     return ` <!-- !Nav Upper Section -->
@@ -19,7 +22,7 @@
       <!-- ?First - div which contains logo and men woman and mobile covers -->
       <div id="first-div">
         <div id="logo">
-         <a href="/home/index.html"> <img
+         <a href="../index.html"> <img
             src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"
             alt=""
           /></a>
@@ -44,7 +47,7 @@
           />
         </div>
         <div id="login-wishlist-cart">
-          <p>Login</p>
+          <p id="login-name">Login</p>
           <div><i class="fa-regular fa-heart"></i></div>
           <div><i class="fa-solid fa-cart-shopping"></i></div>
         </div>

@@ -1,4 +1,8 @@
 // import product from "./product.js";
+import {navbar2}  from "/home/componenets/navbar.js";
+document.querySelector("nav").innerHTML = navbar2();
+
+
 var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 var total = 0;
 var orignal = 0;
