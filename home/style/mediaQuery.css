@@ -1,0 +1,304 @@
+
+@media screen and  (max-width:844px){
+ /* ?TRENDING CATEGORIES SECTION */
+#full-width img{
+    width:145%;
+}
+#full-width{
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.full-width img{
+    width:95%;
+   
+}
+.full-width{
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 0;
+}
+
+.full-width a{
+    padding: 0;
+    margin: 0;
+}
+    /* ?New Arrival section */
+ .main-div{
+    width: 100%;
+    overflow: hidden;
+ }
+
+ #spacing h6:first-child + h6 + h6 {
+    /* color: rgb(27,191,100); */
+    width: 25%;
+}
+.parent-div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px 10px;
+}
+.parent-div p{
+    margin-top:2px;
+}
+.parent-div div > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ?Own your Crazy Poster*/
+.CrazyPoster{
+    width: 100%;
+    
+}
+.CrazyPoster img{
+    width: 100%;
+    margin-left: -10px;
+}
+
+/* ?DESIGNS OF THE WEEK*/
+#parent-img-div{
+    width: 100%;
+}
+
+/* ?TRENDING CATEGORIES SECTION*/
+.trending-div{
+    width: 100%;
+}
+
+/* ?Card slider */
+.main{
+    width: 100%;;
+}
+
+/* ?TOO HOT TO BE MISSED */
+#hot-section{
+    width: 100%;
+}
+
+/* ?CATEGORIES TO BAG*/
+#categories-div{
+    width: 100%;
+}
+
+
+/* ?Second slider*/
+.wrapper1{
+    width: 100%;
+}
+
+/* ?step up your shoe game*/
+#step-up{
+    width: 100%;
+
+}
+
+/* ?TOP ACCESSORIES*/
+.heading{
+    margin-top:20px;
+}
+#categories-div{
+width: 100%;
+}
+
+.big-deal{
+    /* position:absolute; */
+    left:30%;
+}
+/* ?LOVE US, BECOME A TRIBE MEMBER,VOTE FOR NEW DESIGN */
+#step-up1{
+    width: 100%;
+}
+
+/* *footer */
+footer{
+    width: 100%;
+}
+#logo1{
+    display: none;
+}
+
+.section{
+    display: flex;
+    width: 120%;
+    flex-direction: column;
+}
+.footerDiv{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.section span{
+    font-size:15px;
+    padding-left: 10px;
+}
+.section a{
+    font-size:18px;
+    word-spacing: normal;
+    color: rgb(186,183,186);
+}
+.flex-section{
+    width: 95%;
+}
+.flex-section > div > div > a > p{
+     font-size: 15px;
+     color: rgb(186,183,186);
+}
+.woman-footer-options > div >  a > p{
+    /* font-size: 50px; */
+    color: rgb(186,183,186);
+}
+.footer-description h2, p{
+    color: rgb(186,183,186);
+
+}
+.footer-description{
+    width: 95%;
+}
+.each-section{
+    padding-top:20px;
+}
+footer a {
+    padding: 6px 17px;
+}
+.margin-top{
+    margin-top:0px;
+}
+
+.section1{
+    display: none;
+}
+
+.fanbook-div{
+    display: none;
+}
+
+.space-between-div, .mobile-brands{
+    display: none;
+}
+/* *.........img slider */
+.wrapper{
+    width: 100%;
+}
+
+
+/* *...nqv upper section */
+#nav-upper-section{
+    display: none;
+}
+#dropdown, #search{
+    display: none;
+}
+nav{
+    width: 100%;
+}
+#login-wishlist-cart{
+    border :none;
+}
+#parent-div {
+display: flex;
+}
+#parent-div a{
+    
+font-size:15px;
+}
+
+#nav-mid-section{
+    background: rgb(255,210,50);
+    
+}
+#login-wishlist-cart p{
+padding-right: 20px;
+font-weight: bold;
+}
+#login-wishlist-cart{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    padding-right: 20px;
+    font-size: 20px;
+}
+#logo{
+    display: none;
+}
+.icon5{
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 5%;
+}
+.icon5 img{
+    width: 100%;
+}
+}
+/* min-width: 845   */
+@media screen and  (min-width:1000px){
+.icon5{
+
+    display: none;
+}
+}
+@media screen and  (min-width:845px) and (max-width:1000px){
+    .icon5{
+    
+        display: none;
+    }
+    }
+   
+    /* 845 860*/
+    @media screen and  (min-width:845px) and (max-width:860px){
+       #nav-upper-section{
+       display:none;
+       }
+       #dropdown{
+        /* border: 2px solid red; */
+        padding: 0 0;
+        line-height: 37px;
+       }
+       #login-wishlist-cart {
+        width: 75%;
+        border-left: 0px ;
+        margin-left: 5%;
+        /* border: 2px solid red; */
+    }
+   
+       #nav-below-section div{
+        width: 80%;
+               }
+        }
+
+        /* 861 1000 */
+        @media screen and  (min-width:861px) and (max-width:1015px){
+            #nav-upper-section{
+                display:none;
+                }
+                #dropdown{
+                 /* border: 2px solid red; */
+                 padding: 0 0;
+                 line-height: 37px;
+                }
+                #login-wishlist-cart {
+                 width: 75%;
+                 border-left: 0px ;
+                 margin-left: 5%;
+                 /* border: 2px solid red; */
+             }
+            
+                #nav-below-section div{
+                 width: 80%;
+                        }
+        }
+
+        /* 769 - 1000*/
+         @media screen and  (min-width:769px) and (max-width:1000px){
+            section .product {
+                min-width: 25%;
+                margin:  0 15px  0 0;
+                /* border:2px solid red */
+             } 
+        }

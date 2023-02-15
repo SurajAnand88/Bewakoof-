@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="./payment.css" />
+    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/mzdgrAg8_sTf0e-G3eIi3MAIbaxtuiJnIcHUQmuGE8NQVbO30HqvgJ-gKIf-hwpa6g">
+  
+    </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+       <div>
+           <img width="20%" height=""src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="">
+           <h1>email</h1> 
+        </div>
+    </nav>
+    <!-- <hr /> -->
+
+    <div id="payment-price">
+        <div id="payment-price-innerdiv">
+      <h2>Choose your payment method</h2>
+      <h2>Total Amount ₹<span id="payment-amount">1500</span></h2>
+    </div>
+    </div>
+
+
+    <div id = "payment-mode">
+        <div id = "left-payment-mode">
+            
+            <div id="payment-debit-button" class="payOpt" style="background: whitesmoke;">
+                <img src="https://images.bewakoof.com/web/bank-card-fill-1645697857.svg"/>
+                <button id = "payment-debit-button" class="btn">Debit/Credit Card</button>
+            </div>
+            <div id="payment-wallet-button" class="payOpt" >
+                <img src="https://images.bewakoof.com/web/Group-1645705428.png"/>
+                <button id ="payment-wallet-button" class="btn2" style="background: whitesmoke;">Wallet</button>
+            </div>
+            <div id="payment-upi-button" class="payOpt">
+                <img src="https://images.bewakoof.com/web/upi-icon-1645705429.png"/>
+                <button id = "payment-upi-button" class="btn3">UPI</button>
+            </div>
+            <div id="payment-net-banking-button" class="payOpt">
+                <img src="https://images.bewakoof.com/web/nb-icon-1645705428.png"/>
+                <button id = "payment-net-banking-button" class="btn4">Net Banking</button>
+            </div>
+            <div id="payment-cod-button" class="payOpt">
+                <img src="https://images.bewakoof.com/web/cod-icon-1645705427.png"/>
+                <button id = "payment-cod-button" class="btn5">Cash On Delivery</button>
+            </div>
+    
+        </div>
+
+
+        <div id = "right-payment-mode">
+            <div id = "payment-debit">
+                <div>
+                    <img
+                      src="https://images.bewakoof.com/web/Add-card-icon-1600332484.png"
+                      alt=""
+                    />
+                    <p>Add New Card</p>
+                  </div>
+                  <input type="number" id="card-number" placeholder="Card Number" required/>
+                  <h5 id="tag"></h5>
+                  <input type="text" id="card-name" placeholder="Name on Card" required/>
+                  <input type="number" id="card-expiry" placeholder="Expiry (MM/YY)" required/>
+                  <input type="password" id="card-password" placeholder="CVV" required/>
+                  <h5 id="tag2"></h5>
+                  <div id = "card-payment-div2">
+                      <input type="checkbox" id = "card-checkbox"/>
+                      <label id = "card-payment-para1">Save card details for later</label>
+                  </div>
+                  <p>
+                    This transaction you make is totally secure. We don't save your
+                    CVV number.
+                  </p>
+                  <button id="card-pay-now-button" class="paybtn">PAY NOW</button>
+                </div>
+
+            <div id = "payment-wallet">
+                <div>
+                        <img src="https://images.bewakoof.com/web/paytm-1556185965.png" alt="">
+                        <p>Paytm</p>
+                        <input type="radio">
+                </div>
+                <div>
+                        <img src="https://images.bewakoof.com/web/phonepe-1556185963.png" alt="">
+                        <p>Phone Pe</p>     
+                        <input type="radio">             
+                </div>
+                <div>
+                        <img src="https://images.bewakoof.com/web/amazonpay-icon-1600094438.png" alt="">          
+                        <p>Amazon Pay</p>                   
+                        <input type="radio">               
+                </div>
+                <div>             
+                        <img src="https://images.bewakoof.com/web/mobikwik-1556185968.png" alt="">            
+                        <p>Mobikwik</p>          
+                        <input type="radio">                 
+                </div>
+                <div>                
+                        <img src="https://images.bewakoof.com/web/bitmap-copy.jpg" alt="">             
+                        <p>Freecharge</p>                  
+                        <input type="radio">                   
+                </div>
+            </div>
+
+            <div id="payment-upi">
+                    <div>
+                        <img src="https://images.bewakoof.com/web/upi-logo.png" alt="">
+                        <p>Add UPI</p>
+                        <input type="radio">
+                     </div>
+                    <input type="text" placeholder="Enter UPI ID">
+                    <p>UPI ID is in the format of mobilenumber@bank or username@bank</p>
+                    <div>
+                        
+                        <!-- <input type="checkbox" name="" id=""> -->
+                            <p>	Save this UPI ID for future payments.</p>
+                        
+                        
+                    </div>
+                     <button>VERIFY</button>
+            </div>
+            
+            <div id="payment-net-banking">
+                <div>
+                    <img src="https://images.bewakoof.com/web/icici-1556185960.png" alt="">
+                    <p>ICICI</p>
+                    <input type="radio">
+            </div>
+            <div>
+                    <img src="https://images.bewakoof.com/web/axis-1556185962.png" alt="">
+                    <p>Axis</p>     
+                    <input type="radio">             
+            </div>
+            <div>
+                    <img src="https://images.bewakoof.com/web/sbi-1556185961.png" alt="">          
+                    <p>SBI</p>                   
+                    <input type="radio">               
+            </div>
+            <div>             
+                    <img src="https://images.bewakoof.com/web/hdfc-1556185961.png" alt="">            
+                    <p>HDFC</p>          
+                    <input type="radio">                 
+            </div>
+            <div>                
+                    <img src="https://images.bewakoof.com/web/kotak-1556185967.png" alt="">             
+                    <p>Kotak</p>                  
+                    <input type="radio">                   
+            </div>
+            <div>                
+                <img src="https://images.bewakoof.com/web/other-bank-icon-1600258256.png" alt="">             
+                <p>Others</p>                  
+                <button id = "payment-net-other-arrow">∟</button>                 
+        </div>
+        <p>You will be redirected to the banks website to complete the payment process.</p>
+            </div>
+
+            <div id="payment-COD">
+                <div>
+                    <p>Cash Collection Charges: Costs ₹ 65 Extra</p>
+                    <button id="price-btn">Pay <span id="price"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+<script src="payment.js"></script>
