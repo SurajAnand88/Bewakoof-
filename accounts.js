@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 document.getElementById("blockprofile").addEventListener("click", function () {
-    window.location.href = "./myprofile.html";
+    window.location.href = "./Myprofile.html";
 });
 
 document.getElementById("orders").addEventListener("click", function () {

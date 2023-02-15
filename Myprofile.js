@@ -21,40 +21,40 @@ window.onload = function () {
 
 };
 
-document.getElementById("openModal").addEventListener("dblclick", function () {
-    document.getElementById("modal").style.display = "none";
-});
+// document.getElementById("openModal").addEventListener("dblclick", function () {
+//     document.getElementById("modal").style.display = "none";
+// });
 
 
 
-document.getElementById("changePassword").addEventListener("click", function (event) {
-    event.preventDefault();
-    document.getElementById("passwordPopup").style.display = "block";
-});
+// document.getElementById("changePassword").addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("passwordPopup").style.display = "block";
+// });
 
-document.getElementById("passwordForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-    const newPassword = document.getElementById("newPassword").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
+// document.getElementById("passwordForm").addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     const newPassword = document.getElementById("newPassword").value;
+//     const confirmPassword = document.getElementById("confirmPassword").value;
 
-    // // Check if the passwords match
-    // if (newPassword !== confirmPassword) {
-    //   alert("Passwords do not match.");
-    //   return;
-    // }
+//     // // Check if the passwords match
+// if (newPassword !== confirmPassword) {
+//   alert("Passwords do not match.");
+//   return;
+// }
 
 
-    // const signUpArray = JSON.parse(localStorage.getItem("BewakoofData"));
+// const signUpArray = JSON.parse(localStorage.getItem("BewakoofData"));
 
-    // const lastSignUpObject = signUpArray[signUpArray.length - 1];
+// const lastSignUpObject = signUpArray[signUpArray.length - 1];
 
-    // lastSignUpObject.password = newPassword;
+// lastSignUpObject.password = newPassword;
 
-    // // Save  to local storage
-    // localStorage.setItem("BewakoofData", JSON.stringify(signUpArray));
+// // Save  to local storage
+// localStorage.setItem("BewakoofData", JSON.stringify(signUpArray));
 
-    // document.getElementById("passwordPopup").style.display = "none";
-});
+// document.getElementById("passwordPopup").style.display = "none";
+// });
 // document.getElementById("passwordForm").addEventListener("dblclick", function() {
 //   document.getElementById("passwordPopup").style.display = "none";
 // });
@@ -68,14 +68,15 @@ function storeData() {
     const gender = document.getElementById('gender').value;
 
     const formData = {
-        fullName,
-        email,
-        phoneNumber,
-        password,
-        birthdate,
-        gender
+        fullName: fullName,
+        email: email,
+        phoneNumber: phoneNumber,
+        password: password,
+        birthdate: birthdate,
+        gender: gender,
     };
 
     localStorage.setItem('formData', JSON.stringify(formData));
 }
 
+// Hello world
