@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt-otp</title>
+    <link rel="stylesheet" href="./send_otp.css">
+</head>
+<body>
+    <!-- <h1>Hello Harsh</h1> -->
+    <div id="popup" style="display: block;">
+        <div style="float: right; cursor: pointer;" id="close-popup">&times;</div>
+
+        <!-- <p>Enter your number: <input type="text" id="number"></p> -->
+        <h3>Verify your mobile</h3>
+        <p>OTP will be sent to your number</p>
+        <p>+91-<span id="entered-number"></span></p>
+        <!-- <hr> -->
+        <hr style="border: 1px solid rgb(148, 148, 153); width: 75%; padding-right: 15px;">
+        <button id="get-otp">GET OTP</button>
+      </div>
+</body>
+</html>
+<script src="send_otp.js"></script>

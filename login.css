@@ -1,0 +1,155 @@
+* {
+    font-family: montserrat-bold, sans-serif;
+}
+
+.MainContainer {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    margin-top: 15%;
+}
+
+#photo {
+    /* border: 1px solid blue; */
+    margin: auto;
+}
+
+#inputForm {
+    /* border: 1px solid black; */
+    /* padding: 15px 15px; */
+    margin: auto;
+}
+
+#phone-number {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+#phone-number::before {
+    content: attr(data-initials);
+    /* display the initials */
+    color: #ccc;
+    margin-right: 8px;
+}
+
+#phone-number:focus {
+    border-color: #555;
+    outline: none;
+}
+
+#continue-button {
+    background-color: #42a2a2;
+    color: aliceblue;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+#continue-button:focus {
+    border-color: #555;
+    outline: none;
+}
+
+.Straight-line {
+    border-bottom: 1px solid darkgray;
+    height: 1px;
+    width: 50%;
+    margin: auto;
+}
+
+#or {
+    margin: 20px 0;
+    width: 10%;
+}
+
+#Straight-line-after-sign {
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+#inputForm {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: montserrat-bold, sans-serif;
+    margin-bottom: 22px;
+}
+
+h4 {
+    font-family: montserrat, sans-serif;
+    font-size: 18px;
+    color: #a0a0a0;
+    margin: 0 0 70px;
+    line-height: 1.44;
+}
+
+#CONTINUE-WITH-MAIL button {
+    cursor: pointer;
+}
+
+#CONTINUE-WITH-MAIL button {
+    padding: 10px 5px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #615c5c;
+}
+
+#google-facebook-button button {
+    width: 25%;
+    padding: 10px 5px;
+    width: 40%;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #615c5c;
+}
+
+p a {
+    color: #42a2a2;
+
+}
+
+p {
+    font-size: 12px;
+    font-family: montserrat-regular, sans-serif;
+    color: #a0a0a0;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+#msg {
+    text-align: left;
+    color: red;
+    padding-left: px;
+}
+
+#MainContainer {
+    background-color: bisque;
+}
+
+/* #header {
+    width: 75%;
+    border: 1px solid red;
+    padding-top: 35px;
+    /* margin-top: 35px; */

@@ -1,0 +1,135 @@
+* {
+    font-family: montserrat, sans-serif;
+
+}
+
+body {
+    background-color: #fffdf5;
+}
+
+#sigup-maincontainer {
+
+    background-image: linear-gradient(0deg, #fff4c4, #fff);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: auto;
+}
+
+
+#sigupform {
+    background-color: #fff;
+}
+
+#sigup-maincontainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    margin: 35px auto;
+
+}
+
+/* #sigup-maincontainer{
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   border: 2px solid black;
+   margin: 35px auto;
+} */
+
+#image-container img {
+    height: 470px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+/* #image-container {
+    border: 1px solid red;
+} */
+
+#sigupform,
+#image-container {
+    /* border: 1px solid green; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#sigupform {
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+#sigupform {
+    text-align: center;
+    margin: 20px;
+}
+
+h2,
+h3 {
+    margin-bottom: 20px;
+    font-family: montserrat-bold, sans-serif;
+    text-align: left;
+}
+
+.fullname_input,
+.Mobile_input,
+.email_input,
+.password_input {
+    width: 80%;
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: left;
+}
+
+label {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#checkbox-signup {
+    margin-bottom: 20px;
+    /* background-color: blue; */
+    border-radius: 3px;
+}
+
+#checkbox-signup:checked {
+    background-color: skyblue;
+}
+
+#signup-btn {
+    width: 60%;
+    height: 45px;
+    background-color: #989898;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* height: 60px; */
+    font-size: 20px;
+
+}
+
+/* input[type="checkbox"] {
+  background-color: blue;
+  border-radius: 2px;
+} */
+#msg,
+#msg-email,
+#msg-psw {
+    text-align: left;
+    color: red;
+    margin-left: auto;
+    /* border: 1px solid blue; */
+    /* padding-left: 10px; */
+    width: 90%;
+    margin-bottom: 6px;
+    margin-top: 0px;
+    /* padding-left: 25px; */
+}
