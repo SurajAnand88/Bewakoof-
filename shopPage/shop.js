@@ -1,4 +1,6 @@
+import {navbar2} from "../home/componenets/navbar.js";
 import card from "./card.js";
+document.querySelector("nav").innerHTML = navbar2();
 
 var AllPRoducts;
 var products;

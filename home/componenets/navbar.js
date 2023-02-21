@@ -1,9 +1,7 @@
 // let signUpArray = JSON.parse(localStorage.getItem("BewakoofData")) || [];
 
-
-
- function navbar2 (){
-    return ` <!-- !Nav Upper Section -->
+function navbar2() {
+  return ` <!-- !Nav Upper Section -->
     <div id="nav-upper-section">
       <div id="first-section">
         <div><a class="undline-remove" href="">Offers</a></div>
@@ -52,6 +50,6 @@
           <div><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
       </div>
-    </div>`
+    </div>`;
 }
-export {navbar2} 
+export {navbar2};
