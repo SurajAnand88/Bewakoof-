@@ -57,18 +57,20 @@ var discount = 0;
 productDetails(cartItems);
 display(cartItems);
 
-function display(array) {
-  console.log(array);
-  document.getElementById("showProducts").innerHTML = "";
-  total = 0;
-  orignal = 0;
-  discount = 0;
-  document.getElementById("showProducts").innerHTML = "";
-  array.forEach((element, index) => {
-    total += Number(element.price.substring(1) * element.quantity);
-    orignal += Number(element.orignal_price.substring(1) * element.quantity);
+// function for display cart items
 
-    document.getElementById("showProducts").innerHTML += `
+function display(array) {
+ console.log(array);
+ document.getElementById("showProducts").innerHTML = "";
+ total = 0;
+ orignal = 0;
+ discount = 0;
+ document.getElementById("showProducts").innerHTML = "";
+ array.forEach((element, index) => {
+  total += Number(element.price.substring(1) * element.quantity);
+  orignal += Number(element.orignal_price.substring(1) * element.quantity);
+
+  document.getElementById("showProducts").innerHTML += `
   <div class="product-container row col-12  mx-2 p-3  pb-0 mt-3 border" id="products">
       <div class="col-9">
           <p class="text-truncate" style="font-size:14px;">${element.title}</p>
@@ -155,90 +157,90 @@ function display(array) {
   </div>
   
   `;
-  });
-  discount = orignal - total;
-  document.getElementById("total").textContent = total;
-  document.getElementById("total1").textContent = total;
-  document.getElementById("discount").textContent = discount;
-  document.getElementById("orignal-price").textContent = orignal;
+ });
+ discount = orignal - total;
+ document.getElementById("total").textContent = total;
+ document.getElementById("total1").textContent = total;
+ document.getElementById("discount").textContent = discount;
+ document.getElementById("orignal-price").textContent = orignal;
 
-  if (array.length === 1) {
-    document.querySelector("#products").style.height = "269px";
-  }
-  Addevent();
-  AddQty();
+ if (array.length === 1) {
+  document.querySelector("#products").style.height = "269px";
+ }
+ Addevent();
+ AddQty();
 }
 // add qty
 function AddQty() {
-  let cont = document.querySelectorAll(".product-container");
-  for (let i = 0; i < cont.length; i++) {
-    cont[i].children[0].children[3].children[1].children[1].children[0].value =
-      cartItems[i].quantity;
-  }
+ let cont = document.querySelectorAll(".product-container");
+ for (let i = 0; i < cont.length; i++) {
+  cont[i].children[0].children[3].children[1].children[1].children[0].value =
+   cartItems[i].quantity;
+ }
 }
 
 //removing from cart
 function remove(ind) {
-  let cart = JSON.parse(localStorage.getItem("cart"));
-  let arr = cart.filter((element, index) => {
-    return index !== ind;
-  });
-  localStorage.setItem("cart", JSON.stringify(arr));
-  console.log(arr);
-  cartItems = arr;
-  display(cartItems);
+ let cart = JSON.parse(localStorage.getItem("cart"));
+ let arr = cart.filter((element, index) => {
+  return index !== ind;
+ });
+ localStorage.setItem("cart", JSON.stringify(arr));
+ console.log(arr);
+ cartItems = arr;
+ display(cartItems);
 }
 // Adding Events to every product container
 function Addevent() {
-  var containers = document.querySelectorAll(".product-container");
-  for (let i = 0; i < containers.length; i++) {
-    containers[i].addEventListener("click", (e) => {
-      let index = i;
-      // let price = Number(
-      //   e.currentTarget.children[0].children[1].children[0].textContent.substring(
-      //     1
-      //   )
-      // );
+ var containers = document.querySelectorAll(".product-container");
+ for (let i = 0; i < containers.length; i++) {
+  containers[i].addEventListener("click", (e) => {
+   let index = i;
+   // let price = Number(
+   //   e.currentTarget.children[0].children[1].children[0].textContent.substring(
+   //     1
+   //   )
+   // );
 
-      let price = cartItems[i].price;
-      // let orignal_price = Number(
-      //   e.currentTarget.children[0].children[1].children[1].textContent.substring(
-      //     1
-      //   )
-      // );
+   let price = cartItems[i].price;
+   // let orignal_price = Number(
+   //   e.currentTarget.children[0].children[1].children[1].textContent.substring(
+   //     1
+   //   )
+   // );
 
-      let orignal_price = cartItems[i].orignal_price;
+   let orignal_price = cartItems[i].orignal_price;
 
-      let qty = Number(
-        e.currentTarget.children[0].children[3].children[1].children[1]
-          .children[0].value
-      );
-      cartItems[i].quantity = qty;
-      display(cartItems);
-      // let tPrice = Number(document.getElementById("total").textContent);
-      // let oPrice = Number(document.getElementById("orignal-price").textContent);
+   let qty = Number(
+    e.currentTarget.children[0].children[3].children[1].children[1].children[0]
+     .value
+   );
+   cartItems[i].quantity = qty;
+   display(cartItems);
+   // let tPrice = Number(document.getElementById("total").textContent);
+   // let oPrice = Number(document.getElementById("orignal-price").textContent);
 
-      // let prePrice = 0;
-      // let totalPrice = 0;
+   // let prePrice = 0;
+   // let totalPrice = 0;
 
-      // if (preQty !== undefined && preQty !== qty) {
-      //   prePrice = preQty * price;
-      //   totalPrice = qty * price;
-      // }
-      // preQty = qty;
-      // tPrice += totalPrice - prePrice;
+   // if (preQty !== undefined && preQty !== qty) {
+   //   prePrice = preQty * price;
+   //   totalPrice = qty * price;
+   // }
+   // preQty = qty;
+   // tPrice += totalPrice - prePrice;
 
-      // let totalOrignalPrice = qty * orignal_price;
+   // let totalOrignalPrice = qty * orignal_price;
 
-      // if (e.target == "REMOVE") {
-      //   remove(i);
-      // }
-    });
-  }
+   // if (e.target == "REMOVE") {
+   //   remove(i);
+   // }
+  });
+ }
 }
 // product details function
 function productDetails() {
-  document.getElementById("showDetails").innerHTML = `
+ document.getElementById("showDetails").innerHTML = `
   <div class="row m-0 p-3 mt-sm-4">
         <p style="background-color:#FDD835;font-size:14px;"  class=" p-3 fw-bold d-flex justify-content-between align-items-center"> <span>Save extra ₹80 with TriBe</span><span><i class="fa-solid fa-angles-right"></i></span></p>
          <p class="px-1 m-1">Whistles! Get extra 10% Cashback upto 100 on prepaid orders above Rs.699. Coupon code - PAYDAY.</p> 
@@ -280,29 +282,29 @@ function productDetails() {
 `;
 }
 document.getElementById("coupan-section").addEventListener("click", () => {
-  open();
+ open();
 });
 // poping up coupan section
 function open() {
-  document.querySelector(".coupan").classList.add("add");
+ document.querySelector(".coupan").classList.add("add");
 }
 // hiding coupan section
 function none() {
-  document.querySelector(".coupan").classList.remove("add");
+ document.querySelector(".coupan").classList.remove("add");
 }
 
 // poping up address section
 function addAddress() {
-  document.querySelector(".address").classList.add("add-address");
+ document.querySelector(".address").classList.add("add-address");
 }
 
 // Hiding address section
 function cancelAddress() {
-  document.querySelector(".address").classList.remove("add-address");
+ document.querySelector(".address").classList.remove("add-address");
 }
 
 // saving user input address
 document.getElementById("form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  document.querySelector(".address").classList.remove("add-address");
+ e.preventDefault();
+ document.querySelector(".address").classList.remove("add-address");
 });
