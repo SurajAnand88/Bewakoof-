@@ -57,8 +57,6 @@ var discount = 0;
 productDetails(cartItems);
 display(cartItems);
 
-// function for display cart items
-
 function display(array) {
  console.log(array);
  document.getElementById("showProducts").innerHTML = "";
