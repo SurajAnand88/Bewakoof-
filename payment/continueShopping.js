@@ -11,6 +11,6 @@ console.log(footer1);
 
 document.querySelector("#continue-redirect").addEventListener("click", redirectToHomePage);
 function redirectToHomePage(){
-    window.open("/home/index.html", "_self")
+    window.open("../index.html", "_self")
 }
   
