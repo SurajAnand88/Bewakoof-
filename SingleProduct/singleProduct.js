@@ -1,89 +1,12 @@
 import desc from "./desc.js";
 import offers from "./offers.js";
-
+import footer from "../home/componenets/footer.js";
 var product = JSON.parse(localStorage.getItem("product"));
 displayData(product);
 
 
-document.querySelector("navbar").innerHTML = `<!-- !Nav Upper Section -->
-<div id="nav-upper-section">
-  <div id="first-section">
-    <div><a class="undline-remove" href="">Offers</a></div>
-    <div><a class="undline-remove" href="">Fanbook</a></div>
-    <div><a class="undline-remove" href="">Download App</a></div>
-    <div><a class="undline-remove" href="">TriBe Membership</a></div>
-  </div>
-  <div id="second-section">
-    <div><a class="undline-remove" href="">Contact Us</a></div>
-    <div><a class="undline-remove" href="">Track Order</a></div>
-  </div>
-</div>
 
-<!-- !Nav Mid Section -->
-<div id="nav-mid-section">
-  <!-- ?First - div which contains logo and men woman and mobile covers -->
-  <div id="first-div">
-    <div id="logo">
-     <a href="../index.html"> <img
-        src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"
-        alt=""
-      /></a>
-    </div>
-    <div class="dropdown" id="dropdown">
-      <div><a class="undline-remove" class="dropbtn" id="dropbtn">MEN</a></div>
 
-      <div><a class="undline-remove" class="dropbtn">WOMAN</a></div>
-      <div><a class="undline-remove" class="dropbtn">MOBILE COVERS</a></div>
-    </div>
-  </div>
-
-  <div id="second-div">
-    <div id="search">
-      <div id="search-logo">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <input
-        type="search"
-        class="searchbtn"
-        placeholder="Search by product, category or collection"
-      />
-    </div>
-    <div id="login-wishlist-cart">
-      <p id="login-name">Login</p>
-      <div><i class="fa-regular fa-heart"></i></div>
-      <div><i class="fa-solid fa-cart-shopping"></i></div>
-    </div>
-  </div>
-</div>`;
-
-//   image:
-//     "https://images.bewakoof.com/t640/lost-mountains-half-sleeve-t-shirt-272010-1655748131-1.jpg",
-//   title: "Lost Mountains Half Sleeve T-Shirt",
-//   price: "₹349",
-//   orignal_price: "₹1099",
-//   tribe: "₹319For TriBe Members",
-//   tag: "BUY 3 FOR 899",
-//   image2:
-//     "https://images.bewakoof.com/t1080/lost-mountains-half-sleeve-t-shirt-272010-1655748142-3.jpg",
-//   image3:
-//     "https://images.bewakoof.com/t1080/lost-mountains-half-sleeve-t-shirt-272010-1655748147-4.jpg",
-//   image4:
-//     "https://images.bewakoof.com/t1080/lost-mountains-half-sleeve-t-shirt-272010-1655748131-1.jpg",
-//   description:
-//     "Revamp your look with this Lost Mountains Men's Printed T-Shirt. Style this t-shirt with a pair of joggers, sliders & wayfarers for a cool look.\nCountry of Origin - India\nManufactured By - Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amane, Bhiwandi, Thane, Maharashtra - 421302\nPacked By - Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amane, Bhiwandi, Thane, Maharashtra - 421302\nCommodity - Men's T-Shirt",
-//   spec: [
-//     {name: "Regular fit - Fitted at Chest and Straight on Waist Down"},
-//     {
-//       name: "Single Jersey, 100% Cotton Classic, lightweight jersey fabric comprising 100% cotton.",
-//     },
-//   ],
-//   rating: "4.6",
-//   brand: "Bewakoof",
-//   sleeve: "half",
-// };
-
-// console.log(d);
-// displayData(d);
 function displayData(element) {
   document.getElementById("product").innerHTML = `
     <div class="col-md-6 ps-md-5">
