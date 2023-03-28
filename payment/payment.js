@@ -7,7 +7,9 @@ var paymentNetBankingButton = document.getElementById(
 var paymentCodButton = document.getElementById("payment-cod-button");
 //Getting userDetails from localstorage
 const userDetails = JSON.parse(localStorage.getItem("userDetails")) || [];
+var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
+display(cartItems);
 // We have to change debit card button again on clicking second time;
 var btn = document.querySelector(".btn");
 var btn2 = document.querySelector(".btn2");
@@ -238,7 +240,23 @@ document
   .addEventListener("click", continueShopping);
 
 function continueShopping() {
+  localStorage.removeItem("cart");
   window.open("./continueShopping.html", "_self");
+}
+
+function display(array) {
+  array.forEach((element) => {
+    document.getElementById("showProducts").innerHTML += `
+        <div class="row d-flex align-items-center">
+            <div class="col-2 p-2">
+                <img src="${element.image}"  class="img-fluid w-100" />
+            </div>
+            <div class="col-10">
+                <p class="text-truncate fw-bold">${element.title}</p>
+            </div>
+        </div>
+    `;
+  });
 }
 
 document.getElementById("total").textContent = userDetails.total;
@@ -246,3 +264,8 @@ document.getElementById("total1").textContent = userDetails.total;
 document.getElementById("payment-amount").textContent = userDetails.total;
 document.getElementById("discount").textContent = userDetails.discount;
 document.getElementById("orignal-price").textContent = userDetails.orignal;
+document.getElementById("username").textContent = userDetails.username;
+document.getElementById("flat").textContent = userDetails.flat;
+document.getElementById("area").textContent = userDetails.area;
+document.getElementById("city").textContent = userDetails.city;
+document.getElementById("state").textContent = userDetails.state;
