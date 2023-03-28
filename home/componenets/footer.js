@@ -1,5 +1,5 @@
-export default function footer (){
-    return ` <div class="footerDiv">
+function footer() {
+  return ` <div class="footerDiv">
     <div class="container">
       <div id="logo1"><img src="/home/assets/updatedlogoweb.png" alt=""></div>
 
@@ -199,6 +199,7 @@ export default function footer (){
     <h3 class="letter-spacing">OUR PHILOSOPHY</h3>
     <p class="letter-spacing">We believe in creating the kind of fashion, that makes you stand out as they are in line with the latest local and global trends of the industry, but also at the same time offer value for money functionality, with quality materials and comfortable and flattering prints. We try to look into the psyche of our customers, and try to get inspired by the conversations and experiences around us while creating our graphics, to ensure that they are relatable. We believe in constant and consistent innovation to ensure that our fans get nothing short of the bets at affordable rates! While most people do not know, we do not outsource the manufacturing of our products, everything from the conception of the designs to the manufacture and the styling that you see on the photographs of the banners and product pages of our website all happen in house! We go from yarn to product and since we 're vertically integrated and bring fashion from us directly to your doorstep without any middlemen that also further ensures reliability because for us it is not just about the money but about building the trust and credibility in our fans about our brand. We also make sure to decrease the impact on environment and are building initiatives that will help us with the same, for now by optimizing our processes to use only as much as we need from nature, rain water harvesting and recycling the water from our RO water facility, because we believe that the spirit of Bewakoof is about creating an impact by breaking conventions and having a different perspective!</p>
 </div>
-</div>`
-
+</div>`;
 }
+
+export { footer };
