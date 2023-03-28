@@ -1,6 +1,6 @@
 import { navbar2 } from "../home/componenets/navbar.js";
 
-import footer from "/home/componenets/footer.js";
+import { footer } from "../home/componenets/footer.js";
 
 document.querySelector("#nav").innerHTML = navbar2();
 
@@ -10,7 +10,7 @@ nav.innerHTML = navbar2();
 // console.log(navbar2);
 
 let footer1 = document.querySelector("footer");
-// footer1.innerHTML = footer();
+footer1.innerHTML = footer();
 console.log(footer1);
 
 document
