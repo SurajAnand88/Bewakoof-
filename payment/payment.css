@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 40%;
-  margin: auto;
+  margin: 30px auto;
   font-size: 10px;
   letter-spacing: 0.5px;
 }
