@@ -1,11 +1,12 @@
 import desc from "./desc.js";
 import offers from "./offers.js";
-import footer from "../home/componenets/footer.js";
+import { navbar2 } from "../home/componenets/navbar.js";
+
+// import footer from "../home/componenets/footer.js";
 var product = JSON.parse(localStorage.getItem("product"));
+document.querySelector("nav").innerHTML = navbar2();
+
 displayData(product);
-
-
-
 
 function displayData(element) {
   document.getElementById("product").innerHTML = `
