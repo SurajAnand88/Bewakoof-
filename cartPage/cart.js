@@ -9,17 +9,17 @@ productDetails(cartItems);
 display(cartItems);
 
 function display(array) {
- console.log(array);
- document.getElementById("showProducts").innerHTML = "";
- total = 0;
- orignal = 0;
- discount = 0;
- document.getElementById("showProducts").innerHTML = "";
- array.forEach((element, index) => {
-  total += Number(element.price.substring(1) * element.quantity);
-  orignal += Number(element.orignal_price.substring(1) * element.quantity);
+  console.log(array);
+  document.getElementById("showProducts").innerHTML = "";
+  total = 0;
+  orignal = 0;
+  discount = 0;
+  document.getElementById("showProducts").innerHTML = "";
+  array.forEach((element, index) => {
+    total += Number(element.price.substring(1) * element.quantity);
+    orignal += Number(element.orignal_price.substring(1) * element.quantity);
 
-  document.getElementById("showProducts").innerHTML += `
+    document.getElementById("showProducts").innerHTML += `
   <div class="product-container row col-12  mx-2 p-3  pb-0 mt-3 border" id="products">
       <div class="col-9">
           <p class="text-truncate" style="font-size:14px;">${element.title}</p>
@@ -74,12 +74,11 @@ function display(array) {
                   >
                   <p class="arrow-dwn mb-0">
                   <select class="fw-bold" name="quantity-select" id="qty-select${index}" style="border:none; background-color: white; width:30px;">
-                          <option >1</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
                           <option value="4">4</option>
-                          <option value="more">more</option>
+                        
                     </select> 
                     
                     </span>
@@ -106,95 +105,95 @@ function display(array) {
   </div>
   
   `;
- });
- discount = orignal - total;
- document.getElementById("total").textContent = total;
- document.getElementById("total1").textContent = total;
- document.getElementById("discount").textContent = discount;
- document.getElementById("orignal-price").textContent = orignal;
+  });
+  discount = orignal - total;
+  document.getElementById("total").textContent = total;
+  document.getElementById("total1").textContent = total;
+  document.getElementById("discount").textContent = discount;
+  document.getElementById("orignal-price").textContent = orignal;
 
- if (array.length === 1) {
-  document.querySelector("#products").style.height = "269px";
- }
- Addevent();
- AddQty();
+  if (array.length === 1) {
+    document.querySelector("#products").style.height = "269px";
+  }
+  Addevent();
+  AddQty();
 }
 // add qty
 function AddQty() {
- let cont = document.querySelectorAll(".product-container");
- for (let i = 0; i < cont.length; i++) {
-  cont[i].children[0].children[3].children[1].children[1].children[0].value =
-   cartItems[i].quantity;
- }
+  let cont = document.querySelectorAll(".product-container");
+  for (let i = 0; i < cont.length; i++) {
+    cont[i].children[0].children[3].children[1].children[1].children[0].value =
+      cartItems[i].quantity;
+  }
 }
 
 //removing from cart
 function remove(ind) {
- let cart = JSON.parse(localStorage.getItem("cart"));
- let arr = cart.filter((element, index) => {
-  return index !== ind;
- });
- localStorage.setItem("cart", JSON.stringify(arr));
- console.log(arr);
- cartItems = arr;
- display(cartItems);
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  let arr = cart.filter((element, index) => {
+    return index !== ind;
+  });
+  localStorage.setItem("cart", JSON.stringify(arr));
+  console.log(arr);
+  cartItems = arr;
+  display(cartItems);
 }
 // Adding Events to every product container
 function Addevent() {
- var containers = document.querySelectorAll(".product-container");
- for (let i = 0; i < containers.length; i++) {
-  containers[i].addEventListener("click", (e) => {
-   let index = i;
-   // let price = Number(
-   //   e.currentTarget.children[0].children[1].children[0].textContent.substring(
-   //     1
-   //   )
-   // );
+  var containers = document.querySelectorAll(".product-container");
+  for (let i = 0; i < containers.length; i++) {
+    containers[i].addEventListener("click", (e) => {
+      let index = i;
+      // let price = Number(
+      //   e.currentTarget.children[0].children[1].children[0].textContent.substring(
+      //     1
+      //   )
+      // );
 
-   let price = cartItems[i].price;
-   // let orignal_price = Number(
-   //   e.currentTarget.children[0].children[1].children[1].textContent.substring(
-   //     1
-   //   )
-   // );
+      let price = cartItems[i].price;
+      // let orignal_price = Number(
+      //   e.currentTarget.children[0].children[1].children[1].textContent.substring(
+      //     1
+      //   )
+      // );
 
-   let orignal_price = cartItems[i].orignal_price;
+      let orignal_price = cartItems[i].orignal_price;
 
-   let qty = Number(
-    e.currentTarget.children[0].children[3].children[1].children[1].children[0]
-     .value
-   );
-   cartItems[i].quantity = qty;
-   display(cartItems);
-   // let tPrice = Number(document.getElementById("total").textContent);
-   // let oPrice = Number(document.getElementById("orignal-price").textContent);
+      let qty = Number(
+        e.currentTarget.children[0].children[3].children[1].children[1]
+          .children[0].value
+      );
+      cartItems[i].quantity = qty;
+      display(cartItems);
+      // let tPrice = Number(document.getElementById("total").textContent);
+      // let oPrice = Number(document.getElementById("orignal-price").textContent);
 
-   // let prePrice = 0;
-   // let totalPrice = 0;
+      // let prePrice = 0;
+      // let totalPrice = 0;
 
-   // if (preQty !== undefined && preQty !== qty) {
-   //   prePrice = preQty * price;
-   //   totalPrice = qty * price;
-   // }
-   // preQty = qty;
-   // tPrice += totalPrice - prePrice;
+      // if (preQty !== undefined && preQty !== qty) {
+      //   prePrice = preQty * price;
+      //   totalPrice = qty * price;
+      // }
+      // preQty = qty;
+      // tPrice += totalPrice - prePrice;
 
-   // let totalOrignalPrice = qty * orignal_price;
+      // let totalOrignalPrice = qty * orignal_price;
 
-   // if (e.target == "REMOVE") {
-   //   remove(i);
-   // }
-  });
- }
+      // if (e.target == "REMOVE") {
+      //   remove(i);
+      // }
+    });
+  }
 }
 // product details function
 function productDetails() {
- document.getElementById("showDetails").innerHTML = `
+  document.getElementById("showDetails").innerHTML = `
   <div class="row m-0 p-3 mt-sm-4">
         <p style="background-color:#FDD835;font-size:14px;"  class=" p-3 fw-bold d-flex justify-content-between align-items-center"> <span>Save extra ₹80 with TriBe</span><span><i class="fa-solid fa-angles-right"></i></span></p>
          <p class="px-1 m-1">Whistles! Get extra 10% Cashback upto 100 on prepaid orders above Rs.699. Coupon code - PAYDAY.</p> 
 
-    <div class="border pt-2" id="coupan-section" >
+    <div class="border py-2" id="coupan-section" >
         <p class="d-flex justify-content-between p-2 my-0 rounded" style="background-color:#EBF6F5; color:#42a2a2;"><span>Apply Coupan / Gift Card / Referral</span>     <span class="fw-bold">Redeem <i class="fa-solid fa-angles-right"></i></span></p>
     </div>
     <p style="width:100%;background-color:#EBEBEB;" class="fw-bold py-3 mb-0 d-flex align-items-center">PRICE SUMMARY</p>
@@ -231,31 +230,55 @@ function productDetails() {
 `;
 }
 document.getElementById("coupan-section").addEventListener("click", () => {
- open();
+  open();
 });
 // poping up coupan section
 function open() {
- document.querySelector(".coupan").classList.add("add");
+  document.querySelector(".coupan").classList.add("add");
 }
 // hiding coupan section
 function none() {
- document.querySelector(".coupan").classList.remove("add");
+  document.querySelector(".coupan").classList.remove("add");
 }
 
 // poping up address section
 function addAddress() {
- document.querySelector(".address").classList.add("add-address");
+  document.querySelector(".address").classList.add("add-address");
 }
 
 // Hiding address section
 function cancelAddress() {
- document.querySelector(".address").classList.remove("add-address");
+  document.querySelector(".address").classList.remove("add-address");
+}
+
+// Confirming address after filling address form
+function confirmAddress() {
+  const userDetails = {
+    username: document.getElementById("username").value,
+    pincode: document.getElementById("pincode").value,
+    flat: document.getElementById("flat").value,
+    city: document.getElementById("city").value,
+    state: document.getElementById("state").value,
+    area: document.getElementById("area").value,
+    phone: document.getElementById("phone").value,
+    orignal: orignal,
+    discount: discount,
+    total: total,
+  };
+  localStorage.setItem("userDetails", JSON.stringify(userDetails));
+  location.href = "../payment/payment.html";
 }
 
 // saving user input address
 document.getElementById("form").addEventListener("submit", (e) => {
+<<<<<<< HEAD
  e.preventDefault();
 //  window.open('../payment/payment.html')
  window.location.href = '../payment/payment.html'
  document.querySelector(".address").classList.remove("add-address");
+=======
+  e.preventDefault();
+
+  document.querySelector(".address").classList.remove("add-address");
+>>>>>>> a1a35c5e79960b00856366f886632f5d341e896b
 });
