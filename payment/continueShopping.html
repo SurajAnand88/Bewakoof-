@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Continue Shopping</title>
-    <link rel="stylesheet" href="/home/style/navbar.css">
-    <link rel="stylesheet" href="/home/style/mediaQuery.css">
-    <link rel="stylesheet" href="/home/style/footer.css">
-    <script src="https://kit.fontawesome.com/f276ecc4c7.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/mzdgrAg8_sTf0e-G3eIi3MAIbaxtuiJnIcHUQmuGE8NQVbO30HqvgJ-gKIf-hwpa6g">
-  
-<style>
-   
-    #img-container{
+    <link rel="stylesheet" href="/home/style/navbar.css" />
+    <link rel="stylesheet" href="/home/style/mediaQuery.css" />
+    <link rel="stylesheet" href="/home/style/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/f276ecc4c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://play-lh.googleusercontent.com/mzdgrAg8_sTf0e-G3eIi3MAIbaxtuiJnIcHUQmuGE8NQVbO30HqvgJ-gKIf-hwpa6g"
+    />
+
+    <style>
+      #img-container {
         width: 50%;
         margin: auto;
         text-align: center;
-    }
-    #img-container > img{
-width: 40%;
-}
-#img-container > h4, p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-
-    }
-    #body-content {
+      }
+      #img-container > img {
+        width: 40%;
+      }
+      #img-container > h4,
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+      }
+      #body-content {
         text-align: center;
-    }
+      }
 
-    #continue-btn{
-        margin-top: 20px ;
-        margin-bottom: 50px ;
-    }
-    #continue-btn button{
-        padding:10px 80px;
+      #continue-btn {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      #continue-btn button {
+        padding: 10px 80px;
         border: 1px solid black;
-        border-bottom: 3.5px solid rgb(60,66,76);
-        background: rgb(255,210,50);
+        border-bottom: 3.5px solid rgb(60, 66, 76);
+        background: rgb(255, 210, 50);
         border-radius: 5px;
         letter-spacing: 1px;
         font-weight: 520;
-    }
-    #continue-btn button:hover{
+      }
+      #continue-btn button:hover {
         opacity: 0.8;
-    }
-    #img-container > div{
+      }
+      #img-container > div {
         margin: 15px 0px;
-    }
-    #heading-styling{
+      }
+      #heading-styling {
         line-height: 35px;
         font-weight: bold;
         font-size: 20px;
         color: black;
-    }
-</style>
-
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <nav>
-        <!-- ?NAvbar need to be Imported here -->
+      <!-- ?NAvbar need to be Imported here -->
     </nav>
-     
+
     <div id="body-content">
-
-        <div  id="img-container">
-            <!-- <div> -->
-            <img src="https://images.bewakoof.com/web/ic-order-success-bag-anime.gif" alt="continue-shopping-gif">
-            <div>
-
-                <p id="heading-styling">Thank you for shopping!</p>
-                <p style="color: black">Your order has been placed.</p>
-            </div>
+      <div id="img-container">
+        <!-- <div> -->
+        <img
+          src="https://images.bewakoof.com/web/ic-order-success-bag-anime.gif"
+          alt="continue-shopping-gif"
+        />
+        <div>
+          <p id="heading-styling">Thank you for shopping!</p>
+          <p style="color: black">Your order has been placed.</p>
+        </div>
         <!-- </div> -->
-     </div>
+      </div>
 
-     <div>
+      <div>
         <!-- ?Delivering Details need to be added here -->
-     </div>
+      </div>
 
-     <div id="continue-btn">
-        <button id="continue-redirect">CONTINUE SHOPPING</button>
-     </div>
+      <div id="continue-btn">
+        <button id="continue-redirect" onclick="redirectToHomePage()">
+          CONTINUE SHOPPING
+        </button>
+      </div>
     </div>
 
     <footer>
-        <!-- ?Footer need to be imported here -->
+      <!-- ?Footer need to be imported here -->
     </footer>
-</body>
+  </body>
 </html>
 <script src="continueShopping.js" type="module"></script>
